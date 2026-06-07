@@ -1,7 +1,7 @@
-FROM hiddify/hiddify-manager:latest
+# Change from hiddify/hiddify-manager:latest to the GitHub Container Registry path below:
+FROM ghcr.io/hiddify/hiddify-manager:latest
 
 # Expose the internal port that Hiddify web panel uses
-# Railway automatically maps its public domain to this internal port
 EXPOSE 80
 
 # Command to initialize and run the Hiddify panel environment
